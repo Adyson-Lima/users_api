@@ -27,6 +27,10 @@ class Api::V1::UsersController < ApplicationController
       render json: @user.errors, status: :internal_server_error
     end
   end
+  
+  def destroy
+    @user.destroy
+  end
 
 private
 
