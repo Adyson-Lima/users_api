@@ -288,38 +288,14 @@ a {
   <dl style="margin-left: 15px;">
   <dt id="example_group_2" class="passed">GET /ap1/v1/users</dt>
     <script type="text/javascript">moveProgressBar('16.6');</script>
-    <dd class="example passed"><span class="passed_spec_name">Consegue listar todos os users e retornar status 200?</span><span class='duration'>0.05702s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">Consegue listar todos os users e retornar status 200?</span><span class='duration'>0.07438s</span></dd>
   </dl>
 </div>
 <div id="div_group_3" class="example_group passed">
   <dl style="margin-left: 15px;">
   <dt id="example_group_3" class="passed">GET /api/v1/users/id</dt>
-    <script type="text/javascript">makeRed('rspec-header');</script>
-    <script type="text/javascript">makeRed('div_group_3');</script>
-    <script type="text/javascript">makeRed('example_group_3');</script>
     <script type="text/javascript">moveProgressBar('33.3');</script>
-    <dd class="example failed">
-      <span class="failed_spec_name">Consegue listar um user especifico e retornar status 200?</span>
-      <span class="duration">0.00479s</span>
-      <div class="failure" id="failure_1">
-        <div class="message"><pre>  Failure/Error: expect(response.body).to include_json(id: @user.id)
-
-  JSON::ParserError:
-    809: unexpected token at &#39;&#39;
-  # /usr/local/rvm/gems/ruby-3.0.4/gems/rspec-json_expectations-2.2.0/lib/rspec/json_expectations/matchers.rb:13:in `traverse&#39;
-  # /usr/local/rvm/gems/ruby-3.0.4/gems/rspec-json_expectations-2.2.0/lib/rspec/json_expectations/matcher_factory.rb:13:in `block (2 levels) in define_matcher&#39;
-  # ./spec/controllers/v1/users_controller_v1_spec.rb:18:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
-        <div class="backtrace"><pre>/usr/local/rvm/gems/ruby-3.0.4/gems/rspec-json_expectations-2.2.0/lib/rspec/json_expectations/matchers.rb:13:in `traverse&#39;
-/usr/local/rvm/gems/ruby-3.0.4/gems/rspec-json_expectations-2.2.0/lib/rspec/json_expectations/matcher_factory.rb:13:in `block (2 levels) in define_matcher&#39;
-./spec/controllers/v1/users_controller_v1_spec.rb:18:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
-    <pre class="ruby"><code><span class="linenum">11</span>
-<span class="linenum">12</span>    representation = actual
-<span class="offending"><span class="linenum">13</span>    representation = JSON.parse(actual) if String === actual</span>
-<span class="linenum">14</span>
-<span class="linenum">15</span>    RSpec::JsonExpectations::JsonTraverser.traverse(
-<span class="linenum">16</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
-      </div>
-    </dd>
+    <dd class="example passed"><span class="passed_spec_name">Consegue listar um user especifico e retornar status 200?</span><span class='duration'>0.00630s</span></dd>
   </dl>
 </div>
 <div id="div_group_4" class="example_group passed">
@@ -331,22 +307,22 @@ a {
   <dl style="margin-left: 15px;">
   <dt id="example_group_5" class="passed">Teste de preenchimento dos campos do model User</dt>
     <script type="text/javascript">moveProgressBar('50.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">email consegue ser preenchido?</span><span class='duration'>0.00090s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">email consegue ser preenchido?</span><span class='duration'>0.00077s</span></dd>
     <script type="text/javascript">moveProgressBar('66.6');</script>
-    <dd class="example passed"><span class="passed_spec_name">password consegue ser preenchida?</span><span class='duration'>0.00056s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">password consegue ser preenchida?</span><span class='duration'>0.00061s</span></dd>
   </dl>
 </div>
 <div id="div_group_6" class="example_group passed">
   <dl style="margin-left: 15px;">
   <dt id="example_group_6" class="passed">Teste de validacao do model User</dt>
     <script type="text/javascript">moveProgressBar('83.3');</script>
-    <dd class="example passed"><span class="passed_spec_name">User valido com os campos obrigatorios preenchidos?</span><span class='duration'>0.00065s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">User valido com os campos obrigatorios preenchidos?</span><span class='duration'>0.00086s</span></dd>
     <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">User invalido com campos obrigatorios em branco?</span><span class='duration'>0.00142s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">User invalido com campos obrigatorios em branco?</span><span class='duration'>0.00165s</span></dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.07567 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "6 examples, 1 failure";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.08822 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "6 examples, 0 failures";</script>
 </div>
 </div>
 </body>
