@@ -1,15 +1,15 @@
-# API REST "#####", desenvolvida em Ruby on Rails, com versionamento de recursos para treino de programação em Ruby on Rails. 
+# API REST "users_api", desenvolvida em Ruby on Rails, com versionamento de recursos para treino de programação em Ruby on Rails. 
 
 ## Endpoints da API 
--GET: localhost/api/v1/#####
+-GET: localhost/api/v1/users
 
--GET: localhost/api/v1/#####
+-GET: localhost/api/v1/users/id
 
--POST: localhost/api/v1/#####
+-POST: localhost/api/v1/users
 
--PATCH: localhost/api/v1/#####
+-PATCH: localhost/api/v1/users/id
 
--DELETE: localhost/api/v1/#####
+-DELETE: localhost/api/v1/users/id
 
 # Tecnologias utilizadas
 
@@ -31,10 +31,10 @@ Pré-requisitos:
 
 ```bash
 # clonar repositório
-git clone https://github.com/Adyson-Lima/#####.git
+git clone https://github.com/Adyson-Lima/users_api.git
 
-# entrar na pasta #####
-cd #####
+# entrar na pasta users_api
+cd users_api
 
 # instalar dependencias com bundle
 bundle
