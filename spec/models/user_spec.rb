@@ -12,8 +12,8 @@ RSpec.describe User, type: :model do
     end
     
     it 'password consegue ser preenchida?' do
-      @user.password = ""
-      expect(@user.email).to eq("1234")
+      @user.password = "1234"
+      expect(@user.password).to eq("1234")
     end
     
   end
