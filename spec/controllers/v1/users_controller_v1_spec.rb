@@ -29,4 +29,14 @@ RSpec.describe Api::V1::UsersController, type: :controller do
     end
   end
   
+  describe 'PATCH /api/v1/users/id' do
+    it 'Consegue atualizar um user e retornar status 200?' do
+      user = User.last
+      patch :update, params: {user: {email: "user@email.com", password: user.password}, id: user.id}
+      
+      expect(response.body).to include_json(email: "user@email.com")
+      expect(response).to have_http_status(200)
+    end
+  end
+  
 end
