@@ -7,7 +7,7 @@ RSpec.describe User, type: :model do
   describe 'Teste de preenchimento dos campos do model User' do
     
     it 'email consegue ser preenchido?' do
-      @user.email = ""
+      @user.email = "admin@admin.com"
       expect(@user.email).to eq("admin@admin.com")
     end
     
