@@ -27,7 +27,7 @@ RSpec.describe User, type: :model do
     
     it 'User invalido com campos obrigatorios em branco?' do
       user = User.new
-      expect(user).to be_valid()
+      expect(user).to be_invalid()
     end
   end
   
