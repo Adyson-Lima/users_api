@@ -24,6 +24,11 @@ RSpec.describe User, type: :model do
       @user.password = "12365"
       expect(@user).to be_valid
     end
+    
+    it 'User invalido com campos obrigatorios em branco?' do
+      user = User.new
+      expect(user).to be_valid()
+    end
   end
   
 end
