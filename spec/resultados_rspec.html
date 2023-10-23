@@ -288,41 +288,21 @@ a {
   <dl style="margin-left: 15px;">
   <dt id="example_group_2" class="passed">GET /ap1/v1/users</dt>
     <script type="text/javascript">moveProgressBar('14.2');</script>
-    <dd class="example passed"><span class="passed_spec_name">Consegue listar todos os users e retornar status 200?</span><span class='duration'>0.07909s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">Consegue listar todos os users e retornar status 200?</span><span class='duration'>0.05584s</span></dd>
   </dl>
 </div>
 <div id="div_group_3" class="example_group passed">
   <dl style="margin-left: 15px;">
   <dt id="example_group_3" class="passed">GET /api/v1/users/id</dt>
     <script type="text/javascript">moveProgressBar('28.5');</script>
-    <dd class="example passed"><span class="passed_spec_name">Consegue listar um user especifico e retornar status 200?</span><span class='duration'>0.00822s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">Consegue listar um user especifico e retornar status 200?</span><span class='duration'>0.00556s</span></dd>
   </dl>
 </div>
 <div id="div_group_4" class="example_group passed">
   <dl style="margin-left: 15px;">
   <dt id="example_group_4" class="passed">POST /api/v1/users</dt>
-    <script type="text/javascript">makeRed('rspec-header');</script>
-    <script type="text/javascript">makeRed('div_group_4');</script>
-    <script type="text/javascript">makeRed('example_group_4');</script>
     <script type="text/javascript">moveProgressBar('42.8');</script>
-    <dd class="example failed">
-      <span class="failed_spec_name">Consegue criar um user e retornar status 201?</span>
-      <span class="duration">0.00471s</span>
-      <div class="failure" id="failure_1">
-        <div class="message"><pre>  Failure/Error: post :create, params: {user: {email: @user.email, password: @user.password},format: :json}
-
-  AbstractController::ActionNotFound:
-    The action &#39;create&#39; could not be found for Api::V1::UsersController
-  # ./spec/controllers/v1/users_controller_v1_spec.rb:25:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
-        <div class="backtrace"><pre>./spec/controllers/v1/users_controller_v1_spec.rb:25:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
-    <pre class="ruby"><code><span class="linenum">23</span>  describe 'POST /api/v1/users' do
-<span class="linenum">24</span>    it 'Consegue criar um user e retornar status 201?' do
-<span class="offending"><span class="linenum">25</span>      post :create, params: {user: {email: @user.email, password: @user.password},format: :json}</span>
-<span class="linenum">26</span>      
-<span class="linenum">27</span>      expect(response.body).to include_json(email: @user.email)
-<span class="linenum">28</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
-      </div>
-    </dd>
+    <dd class="example passed"><span class="passed_spec_name">Consegue criar um user e retornar status 201?</span><span class='duration'>0.01412s</span></dd>
   </dl>
 </div>
 <div id="div_group_5" class="example_group passed">
@@ -334,22 +314,22 @@ a {
   <dl style="margin-left: 15px;">
   <dt id="example_group_6" class="passed">Teste de preenchimento dos campos do model User</dt>
     <script type="text/javascript">moveProgressBar('57.1');</script>
-    <dd class="example passed"><span class="passed_spec_name">email consegue ser preenchido?</span><span class='duration'>0.00148s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">email consegue ser preenchido?</span><span class='duration'>0.00083s</span></dd>
     <script type="text/javascript">moveProgressBar('71.4');</script>
-    <dd class="example passed"><span class="passed_spec_name">password consegue ser preenchida?</span><span class='duration'>0.00099s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">password consegue ser preenchida?</span><span class='duration'>0.00067s</span></dd>
   </dl>
 </div>
 <div id="div_group_7" class="example_group passed">
   <dl style="margin-left: 15px;">
   <dt id="example_group_7" class="passed">Teste de validacao do model User</dt>
     <script type="text/javascript">moveProgressBar('85.7');</script>
-    <dd class="example passed"><span class="passed_spec_name">User valido com os campos obrigatorios preenchidos?</span><span class='duration'>0.00086s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">User valido com os campos obrigatorios preenchidos?</span><span class='duration'>0.00081s</span></dd>
     <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">User invalido com campos obrigatorios em branco?</span><span class='duration'>0.00194s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">User invalido com campos obrigatorios em branco?</span><span class='duration'>0.00213s</span></dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.11383 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "7 examples, 1 failure";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.08405 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "7 examples, 0 failures";</script>
 </div>
 </div>
 </body>
