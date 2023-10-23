@@ -287,12 +287,36 @@ a {
 <div id="div_group_2" class="example_group passed">
   <dl style="margin-left: 15px;">
   <dt id="example_group_2" class="passed">Teste de preenchimento dos campos do model User</dt>
+    <script type="text/javascript">moveProgressBar('50.0');</script>
+    <dd class="example passed"><span class="passed_spec_name">email consegue ser preenchido?</span><span class='duration'>0.03841s</span></dd>
+    <script type="text/javascript">makeRed('rspec-header');</script>
+    <script type="text/javascript">makeRed('div_group_2');</script>
+    <script type="text/javascript">makeRed('example_group_2');</script>
     <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">email consegue ser preenchido?</span><span class='duration'>0.04015s</span></dd>
+    <dd class="example failed">
+      <span class="failed_spec_name">password consegue ser preenchida?</span>
+      <span class="duration">0.00520s</span>
+      <div class="failure" id="failure_1">
+        <div class="message"><pre>  Failure/Error: expect(@user.email).to eq(&quot;1234&quot;)
+
+    expected: &quot;1234&quot;
+         got: nil
+
+    (compared using ==)
+  # ./spec/models/user_spec.rb:16:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+        <div class="backtrace"><pre>./spec/models/user_spec.rb:16:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">14</span>    it 'password consegue ser preenchida?' do
+<span class="linenum">15</span>      @user.password = ""
+<span class="offending"><span class="linenum">16</span>      expect(@user.email).to eq("1234")</span>
+<span class="linenum">17</span>    end
+<span class="linenum">18</span>    
+<span class="linenum">19</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.04217 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "1 example, 0 failures";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.05134 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "2 examples, 1 failure";</script>
 </div>
 </div>
 </body>

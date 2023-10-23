@@ -11,6 +11,11 @@ RSpec.describe User, type: :model do
       expect(@user.email).to eq("admin@admin.com")
     end
     
+    it 'password consegue ser preenchida?' do
+      @user.password = ""
+      expect(@user.email).to eq("1234")
+    end
+    
   end
   
 end
