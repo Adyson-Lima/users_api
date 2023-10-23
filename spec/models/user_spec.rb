@@ -18,4 +18,12 @@ RSpec.describe User, type: :model do
     
   end
   
+  describe 'Teste de validacao do model User' do
+    it 'User valido com os campos obrigatorios preenchidos?' do
+      @user.email = ""
+      @user.password = ""
+      expect(@user).to be_valid
+    end
+  end
+  
 end
