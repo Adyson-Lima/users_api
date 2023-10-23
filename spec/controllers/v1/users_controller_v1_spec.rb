@@ -20,4 +20,13 @@ RSpec.describe Api::V1::UsersController, type: :controller do
     end
   end
   
+  describe 'POST /api/v1/users' do
+    it 'Consegue criar um user e retornar status 201?' do
+      post :create, params: {user: {email: @user.email, password: @user.password},format: :json}
+      
+      expect(response.body).to include_json(email: @user.email)
+      expect(response).to have_http_status(201)
+    end
+  end
+  
 end
