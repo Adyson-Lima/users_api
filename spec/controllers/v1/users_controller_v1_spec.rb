@@ -12,4 +12,12 @@ RSpec.describe Api::V1::UsersController, type: :controller do
     end
   end
   
+  describe 'GET /api/v1/users/id' do
+    it 'Consegue listar um user especifico e retornar status 200?' do
+      get :show, params: {id: @user.id}
+      expect(response.body).to include_json(id: @user.id)
+      expect(response).to have_http_status(200)
+    end
+  end
+  
 end
