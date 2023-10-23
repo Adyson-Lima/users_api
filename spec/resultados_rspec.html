@@ -288,38 +288,20 @@ a {
   <dl style="margin-left: 15px;">
   <dt id="example_group_2" class="passed">Teste de preenchimento dos campos do model User</dt>
     <script type="text/javascript">moveProgressBar('33.3');</script>
-    <dd class="example passed"><span class="passed_spec_name">email consegue ser preenchido?</span><span class='duration'>0.03723s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">email consegue ser preenchido?</span><span class='duration'>0.04288s</span></dd>
     <script type="text/javascript">moveProgressBar('66.6');</script>
-    <dd class="example passed"><span class="passed_spec_name">password consegue ser preenchida?</span><span class='duration'>0.00069s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">password consegue ser preenchida?</span><span class='duration'>0.00094s</span></dd>
   </dl>
 </div>
 <div id="div_group_3" class="example_group passed">
   <dl style="margin-left: 15px;">
   <dt id="example_group_3" class="passed">Teste de validacao do model User</dt>
-    <script type="text/javascript">makeRed('rspec-header');</script>
-    <script type="text/javascript">makeRed('div_group_3');</script>
-    <script type="text/javascript">makeRed('example_group_3');</script>
     <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example failed">
-      <span class="failed_spec_name">User valido com os campos obrigatorios preenchidos?</span>
-      <span class="duration">1.62567s</span>
-      <div class="failure" id="failure_1">
-        <div class="message"><pre>  Failure/Error: expect(@user).to be_valid
-    expected #&lt;User id: nil, email: &quot;&quot;, password: [FILTERED], created_at: nil, updated_at: nil&gt; to be valid, but got errors: Email can&#39;t be blank, Password can&#39;t be blank
-  # ./spec/models/user_spec.rb:25:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
-        <div class="backtrace"><pre>./spec/models/user_spec.rb:25:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
-    <pre class="ruby"><code><span class="linenum">23</span>      @user.email = ""
-<span class="linenum">24</span>      @user.password = ""
-<span class="offending"><span class="linenum">25</span>      expect(@user).to be_valid</span>
-<span class="linenum">26</span>    end
-<span class="linenum">27</span>  end
-<span class="linenum">28</span><span class="comment"># Install the coderay gem to get syntax highlighting</span></code></pre>
-      </div>
-    </dd>
+    <dd class="example passed"><span class="passed_spec_name">User valido com os campos obrigatorios preenchidos?</span><span class='duration'>0.00103s</span></dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>1.67357 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "3 examples, 1 failure";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.04766 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "3 examples, 0 failures";</script>
 </div>
 </div>
 </body>
